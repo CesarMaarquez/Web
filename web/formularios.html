@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoPagina.png" alt="logo" width="90"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="párrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-verde text-white py-3">Portal</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="formularios">
+                    <h1 class="text-center">FORMULARIOS</h1>
+                    <h3>Formulario de Login</h3>
+                    <form action="Login.php" method="post">
+                        <label for="">Usuario</label>
+                        <input type="text" name="usuario" id=""> <br>
+                        <label for="">Contraseña</label>
+                        <input type="text" name="Password" id=""><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+
+                    <h3>Formulario de Registro</h3>
+                    <form action="Login.php" method="post">
+                        <label for="">Usuario</label>
+                        <input type="text" name="usuario" id=""> <br>
+                        <label for="">Contraseña</label>
+                        <input type="text" name="Password" id=""><br>
+                        <select name="Dia de Nacimiento" id=""></select><br>
+                        <label for="">Comentarios</label>
+                        <textarea name="Comentarios" id="" cols="40" rows="3"></textarea><br><br>
+                        <fieldset>
+                            <label for="">Aficiones:</label><br>
+                            <input type="checkbox" name="Aficiones" id="" value="Cine">
+                            <label for="">Cine</label><br>
+                            <input type="checkbox" name="Aficiones" id="" value="Deportes">
+                            <label for="">Deportes</label><br>
+                            <input type="checkbox" name="Aficiones" id="" value="Lectura">
+                            <label for="">Lectura</label><br>
+                            <input type="checkbox" name="Aficiones" id="" value="Viajar">
+                            <label for="">Viajar</label><br><br>
+                        </fieldset><br>
+                        <fieldset>
+                            <label for="">Estado Civil:</label><br>
+                            <input type="radio" name="" id="">
+                            <label for="">Casado/a</label><br>
+                            <input type="radio" name="" id="">
+                            <label for="">Soltero/a</label><br>
+                            <input type="radio" name="" id="">
+                            <label for="">Viudo/a</label><br>
+                            <input type="radio" name="" id="">
+                            <label for="">Otros</label><br>
+                        </fieldset>
+
+
+
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-verde text-center text-white py-3">&copy; César Márquez</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoPagina.png" alt="logo" width="90"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="párrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-verde text-white py-3">Portal</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="listas">
+                    <div class="text-center"> <h1>LISTAS</h1></div>
+                    <h3>Lista Desordenada</h3>
+                    <ul>
+                        <li>Primero</li>
+                        <li>Segundo</li>
+                        <li>Tercero</li>
+                    </ul>
+                    <h3>Lista Ordenada</h3>
+                    <ol>
+                        <li>Primero</li>
+                        <li>Segundo</li>
+                        <li>Tercero</li>
+                    </ol>
+                    <h3>Lista Desordenada con sublista</h3>
+                    <ul>
+                        <li>Primero
+                           <ul>
+                            <li>Arriba</li>
+                            <li>Abajo</li>
+                           </ul>
+                        </li>
+                        <li>Segundo</li>
+                        <li>Tercero</li>
+                    </ul>
+                    <h3>Lista Ordenada con sublista</h3>
+                    <ol>
+                        <li>Primero
+                           <ol>
+                            <li>Arriba</li>
+                            <li>Abajo</li>
+                           </ol>
+                        </li>
+                        <li>Segundo</li>
+                        <li>Tercero</li>
+                    </ol>
+                    <h3>Lista Desordenada con sublista</h3>
+                    <ul>
+                        <li>Primero
+                           <ul>
+                            <li>Arriba</li>
+                            <li>Abajo</li>
+                           </ul>
+                        </li>
+                        <li>Segundo</li>
+                        <li>Tercero</li>
+                    </ul>
+                    <h3>Lista Desordenada con doble sublista</h3>
+                    <ul>
+                        <li>Primero
+                           <ul>
+                            <li>Arriba
+                                <ul>
+                                    <li>Izquierda</li>
+                                    <li>Derecha</li>
+                                </ul>
+                            </li>
+                            <li>Abajo</li>
+                           </ul>
+                        </li>
+                        <li>Segundo</li>
+                        <li>Tercero</li>
+                    </ul>
+                    <h3>Lista Desordenada con doble sublista <strong>customizada</strong></h3>
+                    <ul>
+                        <li>Primero
+                           <ul>
+                            <li>Arriba
+                                <ul>
+                                    <li>Izquierda</li>
+                                    <li>Derecha</li>
+                                </ul>
+                            </li>
+                            <li>Abajo</li>
+                           </ul>
+                        </li>
+                        <li>Segundo</li>
+                        <li>Tercero</li>
+                    </ul>
+                   
+                   <h3>Lista de Definición</h3>
+                    <dl>
+                    <dt>Primero (son de tipo bloque de forma predeterminada)</dt>
+                    <dd>Definición de primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi porro cupiditate rem ullam? Unde, provident consequuntur, ex nemo quis ad inventore ratione ducimus vero eum quibusdam? Cumque, velit. Ullam.</dd>
+                    <dt>Segundo</dt>
+                    <dd>Definición de segundo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus placeat numquam quo sapiente veniam accusamus molestiae fugit, omnis dolorum, explicabo animi! Quaerat molestias excepturi temporibus necessitatibus expedita, tenetur molestiae?</dd>
+                    <dt>Tercero</dt>
+                    <dd>Definición de tercero Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa sit inventore suscipit vitae assumenda. Quo exercitationem temporibus totam nobis, repellendus maxime repellat odit ab voluptates libero porro, ratione consectetur.</dd>
+                   </dl>
+                
+            
+                </div>
+                    
+                    
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-verde text-center text-white py-3">&copy; César Márquez</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

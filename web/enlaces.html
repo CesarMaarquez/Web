@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoPagina.png" alt="logo" width="90"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="párrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-verde text-white py-3">Portal</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="enlaces">
+                    <h1 class="text-center">ENLACES</h1>
+                    <p>En esta página vamos a utilizar enlaces, hipervínculos, etc...</p>
+                    <p><a href="index.html">Ir a HOME</a></p>
+                    <p><a href="https://www.google.com/?hl=es&safe=active&ssui=on">Ir a google</a></p>
+                    <p>Ahora vamos a dirigirnos a una página clicando la foto</p>
+                    <p><a href="https://www.ferrari.com/es-ES"><img src="img/450_1000.jpg" alt="logoferrari" width="120"></a></p>
+                    <p>Ahora subrayamos y ponemos en negrita un link</p>
+                    <p class="text-subr"><a href="https://www.instagram.com/"><strong>Instragram</strong></a></p>
+                    <p><a href="https://www.google.com/intl/es_es/drive/"><h3>DRIVE</h3></a></p>
+                    
+                    
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-verde text-center text-white py-3">&copy; César Márquez</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
