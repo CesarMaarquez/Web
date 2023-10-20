@@ -244,6 +244,7 @@ span4 {
 
 #listas dl dt {
     background-color: aqua;
+    display: inline;
 }
 
 #listas ul ul ul {
@@ -300,4 +301,14 @@ span4 {
     width: 100%;
 }
 
- 
+ .in-line {
+    display: inline;
+ }
+
+ table.tstriped tr:nth-child(odd) {
+    background-color: blueviolet;
+ }
+
+ table.tstriped tr:nth-child(even) {
+    background-color: rgb(9, 172, 226);
+ }
